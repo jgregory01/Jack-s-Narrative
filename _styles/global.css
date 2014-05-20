@@ -1,0 +1,79 @@
+//by JackT
+
+/* only applies to the index.html body tag "main" */
+body.main { 
+	margin: 0;
+	}
+
+/* general body styles, including any loaded into index <iframe> */
+body {
+	color: gray;
+	font-family: arial;
+}
+	
+
+/* general heading and text styles */
+
+/* LAYOUT
+   ----------------------------------- */
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#video {
+	z-index: 0;}
+
+#box1 {left: 10%;top: 20%;}
+#box2 {left: 42%;top: 20%;}
+#box3 {left: 75%;top: 20%;}
+#box4 {left: 10%;top: 70%;}
+#box5 {left: 42%; top: 70%;}
+#box6 {left: 75%; top: 70%;}
+
+#vid1 {left: 10%;top: 20%;}
+#vid2 {left: 42%;top: 20%;}
+#vid3 {left: 75%;top: 20%;}
+#vid4 {left: 10%;top: 70%;}
+#vid5 {left: 42%; top: 70%;}
+#vid6 {left: 75%; top: 70%;}
+
+.vid {position: absolute;
+	  width: 240px;
+	  height: 135px;
+	  border-color: black;
+      background-color: black;
+      border-style: solid;
+      border-width: 3px;
+	  z-index:2;
+      opacity: 0;
+      transition: opacity .5s ease-out;
+   	  -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
+}
+.box {position: absolute;
+	  width: 240px;
+	  height: 135px;
+	  border-color: black;
+      background-color: black;
+      border-style: solid;
+      border-width: 3px;
+      z-index:1;
+      opacity: 1;
+      transition: opacity .5s ease-out;
+   	  -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
+      
+}
+.vid:hover{opacity: 1;
+cursor:pointer;
+}
+
+#wrapper {
+	width: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+} 
